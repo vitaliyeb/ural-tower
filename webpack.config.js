@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const vocobulary = require('./dev/vocabulary');
 
 module.exports = {
     entry: path.resolve(__dirname, 'dev'),
@@ -40,15 +39,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'public', 'index.html'),
-            vocobulary: vocobulary.ru,
-            langMode: 'ru'
-        }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'public', 'index.html'),
-            vocobulary: vocobulary.en,
-            filename: 'index_en.html',
-            langMode: 'en'
+            template: path.resolve(__dirname, 'public', 'index.html')
         })
     ],
     devServer: {
