@@ -1,2 +1,2 @@
-import './style/main.styl'
+import './style/main'
 import './images'

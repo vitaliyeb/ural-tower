@@ -1,5 +1,6 @@
 html
   font-size 16px
+  line-height 1.2em
 
 body
   font-family: 'Roboto Mono', monospace;
@@ -7,12 +8,24 @@ body
   background-color #e4e6e8
 
 .container
-  max-width 1440px
+  max-width 1160px
   box-sizing border-box
   width 100%
   margin 0 auto
-  padding 0 55px
+  padding 0 17px
   @media (max-width: 768px)
     padding 0 clamp(16px, 8vw, 55px)
   @media (max-width: 520px)
     padding 0 clamp(16px, 3vw, 55px)
+
+p
+  margin 0
+
+.button__consultate
+  border 1px solid #2a59b9
+  box-sizing border-box
+  padding 15px 22px
+  color #2b5cbf
+  font-weight 400
+  font-size 14px
+  cursor pointer
